@@ -1,1 +1,177 @@
-<h1>Does this work?</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Oh... hello there :)
+			If you want to contact me, here is my mail: mehmet-ali.asar@protonmail.com-->
+		<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,programming,training,learning,lessons,examples,source code,colors,demos,tips">
+		<link rel="icon" href="3dicon.ico" type="image/x-icon">
+		<title>Mehmet-Ali's portfolio</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This was intended to be a portfolio of me, but I also use it for blogging purposes. So feel free to learn with me! :)">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+		<link href="custom.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<wrapper>
+			<!--Begrüßung-->
+			<div>
+				<h1 id="greeting" class="is_orange far fa-hand-peace"> Hello there!</h1>
+			</div>
+
+
+			<div>
+				<svg id="personal" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+					<path fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
+					<text x="60" y="100" stroke="black" stroke-opacity="1">I am a c.s. student who started his</text>
+					<text x="100" y="120" stroke="black" stroke-opacity="1">journey by the age of 8.</text>
+					<text x="40" y="160" stroke="black" stroke-opacity="1">
+						Since that age I am doing web design,
+					</text>
+					<text x="50" y="180" stroke="black" stroke-opacity="1">
+						server management, circuit design,
+					</text>
+					<text x="30" y="200" stroke="black" stroke-opacity="1">
+						chat bot design, scripting with Python etc.
+					</text>
+					<text x="40" y="240" stroke="black" stroke-opacity="1">
+						Besides of that I have a YouTube channel.
+					</text>
+					<text x="50" y="280" stroke="black" stroke-opacity="1">
+						I know German, English and Turkish.
+					</text>
+					<text x="30" y="300" stroke="black" stroke-opacity="1">
+						That means communication isn't a problem.
+					</text>
+				</svg>
+
+				<!--Profilbild-->
+				<svg version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400"
+				style="filter: drop-shadow(rgba(255, 127, 0, 1) 0px 0px 10px);">
+					<defs>
+						<pattern id="image" x="0" y="0" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+							<image xlink:href="fly3.jpeg" preserveAspectRatio="none" width="1" height="1"></image>
+						</pattern>
+					</defs>
+					<path fill-opacity="1" stroke="orange" stroke-opacity="1" fill="url(#image)" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
+				</svg>
+
+				<!--Replaces onClick from JS with pure CSS: https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css/32721572-->
+				<input type="checkbox" id="btnControl"/>
+				<label class="btn" for="btnControl">
+				<svg version="1.1" id="accounts" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+					<path class="dynamic-color" fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
+					<text x="60" y="100" stroke="black" stroke-opacity="1">
+						Linkedin
+					</text>
+				</svg>
+				</label>
+			</div>
+
+			<setspace/>
+			
+
+			<!--Button, der zu Skills führt-->
+			<div class="has-text-centered">
+				<button id="custom_button" class="button is-dark is-rounded"
+				id="scrollnow"
+				onClick="document.getElementById('skills').scrollIntoView({block:'start',behavior:'smooth'});">
+				<i class="fas fa-angle-double-down"></i><!--&Darr;--></button>
+			</div>
+
+			<!--2 Halbreise-->
+			<svg viewBox="0 0 120 30">
+				<circle fill="orangered" cx="0" cy="15" r="5"/>
+				<circle fill="orangered" cx="120" cy="15" r="5"/>
+			</svg>
+
+			<setspace></setspace>
+
+			<!--SVG-Skillsüberschrift-->
+			<h1 class="is_orange" id="skills">
+				<span class="icon">
+					<svg width="100%">
+						<circle cx="1" cy="30" r="1" fill="orange"></circle>
+						<line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/>
+						<line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/>
+					</svg>
+				</span>
+				<span class="text">
+					&nbspSkills&nbsp
+				</span>
+				<span class="icon">
+					<svg width="100%">
+						<circle cx="20" cy="30" r="1" fill="orange"></circle>
+						<line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/>
+						<line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/>
+					</svg>
+				</span>
+			</h1>
+
+			<!--Skillsabschnitt-->
+			<p class="is_orange has_borders">{"skillset":"[<span class="is_white">HTML5,CSS3,Python</span>\r\n",<br>"Networking (
+				<span class="is_white">Cisco Certificate-CNE</span>)]\r\n",<br>"Basics of each one of these [
+				<span class="is_white">SQL,PHP,C,C++,(N)ASM,Vanilla JS,React,Go,Java</span>]]"}
+			</p>
+			<setspace/>
+
+			<!--Button, der zu den Projekten führt-->
+			<div class="has-text-centered">
+				<button id="custom_button" class="button is-dark is-rounded"
+				id="scrollnow"
+				onClick="document.getElementById('projects').scrollIntoView({block:'start',behavior:'smooth'});">
+				<i class="fas fa-angle-double-down"></i><!--&Darr;--></button>
+			</div>
+
+			<!--Erneut 2 Halbkreise-->
+			<svg viewBox="0 0 120 30">
+				<circle fill="orangered" cx="0" cy="15" r="5"/>
+				<circle fill="orangered" cx="120" cy="15" r="5"/>
+			</svg>
+
+			<!--SVG-Projektüberschrift-->
+			<h1 class="is_orange" id="projects">
+				<span class="icon">
+					<svg width="100%">
+						<circle cx="1" cy="30" r="1" fill="orange"></circle>
+						<line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/>
+						<line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/>
+					</svg>
+				</span>
+				<span class="text">
+					&nbspProjects&nbsp
+				</span>
+				<span class="icon">
+					<svg width="100%">
+						<circle cx="20" cy="30" r="1" fill="orange"></circle>
+						<line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/>
+						<line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/>
+					</svg>
+				</span>
+			</h1>
+
+			<!--Projektabschnittsbeschreibungen-->
+			<h4 class="is_grey has_borders has_inline_block">Here is a preview of my projects. They are not open to the public and reside on my prod server. Some projects are also on <a href="https://gitlab.com/asar_ma" style="text-decoration:none;color: #6ff">GitLab</a>, btw.</h4>
+			
+			<setspace/>
+
+			<!--Projektauflistungen-->
+			<container class="container">
+				<child class="child is_orange">I have an unofficial - created my own library - chat bot that is written in Python 2.7. It is active on the social media platform LINE.</child>
+				<child class="child is_orange">Then there is an unofficial Facebook library written in Py 2.7. It is capable of renewing tokens extracted from cookies, logging in, listening the FB servers for new notification, and sending messages by triggering the bot with specific key words. Facebook has a strange algorithm that blocks the POST resuest. It is based on Http/1.1 and uses the official python module "request".</child>
+				<child class="child is_orange">I wrote a very basic HTTP/1.1 server and client in Python.</child>
+				<child class="child is_orange">A worm in Py2.7. Do not be scared. I am not one of these black hat hackers :)<br>Just wanted to have fun and learn something new. That's it.</child>
+				<child class="child is_orange">A server monitor that refreshes its content every second written in JavaScript, HTML (it's not a programming language... I got it), CSS and in PHP. It also has a quite entertaining login page.</child>
+				<child class="child is_orange">I am currently writing a bootloader in x86 Assembly and a Brainfuck translator in C. Wish me luck! :)</child>
+			</container>
+
+		</wrapper>
+
+		<!--Nachladen von Javascript-Bibliotheken-->
+		<script src="custom.js"></script>
+		<!--<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>-->
+	</body>
+</html>
