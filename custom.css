@@ -25,9 +25,9 @@ body{background: #333;;width:97%;
     background-image:url('black_pentagon.svg')}
     /*max-height:217px; will not work. It(height in general)creates a border in this svg. Using padding-bottom instead//em instead of % due to responsive design*/
 /*img{height:34%;top:-14em;background-size:cover;position:relative;display:block;margin:auto;z-index:1;opacity: .1}*/
-.child{border:2px solid #092;
+.child{border:2px solid #BBB;
     padding: 0.5em;
-    width: calc(39% - 4px);
+    width:45%;
     height: 100%;
     margin:1em;border-radius: 5px}
 .container{display: flex;
@@ -37,7 +37,7 @@ body{background: #333;;width:97%;
 #is_yellow{color: yellow}
 .is_white{color:white}
 .is_orange{color:orange}
-.is_grey{color:grey}
+.is_grey{color:#BBB}
 setspace{padding:1em 1px 1em 1px;} /*instead of <br>! padding:1em 0 1em 0; doesn't work for some reason. Using 1 px instead for left and right. It is not noticeable*/
 /*ONLY FOR SVGS*/
 .icon,
@@ -174,6 +174,9 @@ a.dropdown-item,a.button,.dropdown-content>a.dropdown-item{
 font-weight: bolder;    
 }
 
+hr{border: 1px solid orangered;}
+
+a{text-decoration:none;color: #6ff}
 
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/
 /*
