@@ -29,3 +29,18 @@ document.onkeydown = function _() {
             break;
     }
 }
+function bright(){
+    document.body.style.backgroundColor="#666";
+}
+function dark(){
+    document.body.style.backgroundColor="#000";
+}
+function original(){
+    document.body.style.backgroundColor="#444";
+}
+
+var dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function(event) {
+  event.stopPropagation();
+  dropdown.classList.toggle('is-active');
+});

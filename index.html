@@ -9,12 +9,48 @@
 		<meta charset="utf-8">
 		<meta name="description" content="This was intended to be a portfolio of me, but I also use it for blogging purposes. So feel free to learn with me! :)">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
 		<link href="custom.css" rel="stylesheet">
 
 	</head>
 	<body>
+		<header class="has-text-centered" style="background-color: grey;width:100%;top:0;position: sticky;z-index: 1;">
+
+			<div class="dropdown">
+				<div class="dropdown-trigger">
+				  <button class="button is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
+					<i class="fas fa-edit"></i>&nbsp;Mode
+				  </button>
+				</div>
+				<div class="dropdown-menu" id="dropdown-menu" role="menu">
+				  <div class="dropdown-content">
+					<a class="dropdown-item is-dark" onClick="dark()">
+					  Dark mode
+					</a>
+					<a class="dropdown-item" onClick="bright()">
+					  Bright mode
+					</a>
+					<a class="dropdown-item" onClick="bright()">
+						Outrun 1986 mode *soon*
+					  </a>
+					<hr class="dropdown-divider">
+					<a class="dropdown-item" onClick="original()">
+					  Original mode
+					</a>
+				  </div>
+				</div>
+			  </div>
+
+			  <a class="button is-dark">
+				Blog
+			  </a>
+			  <a class="button is-dark">
+				Imprint
+			  </a>
+
+	</header>
 		<wrapper>
 			<!--Begrüßung-->
 			<div>
@@ -75,7 +111,7 @@
 
 			<!--Button, der zu Skills führt-->
 			<div class="has-text-centered">
-				<button id="custom_button" class="button is-dark is-rounded"
+				<button id="custom_button" class=" button is-dark is-rounded"
 				id="scrollnow"
 				onClick="document.getElementById('skills').scrollIntoView({block:'start',behavior:'smooth'});">
 				<i class="fas fa-angle-double-down"></i><!--&Darr;--></button>

@@ -13,9 +13,9 @@ h1{font-size: xx-large;}
 h4{font-size: x-large;}
 p{font-size: larger;}
 .child{font-size: larger;}
-html{background:orangered;cursor: url("cur.cur"), auto;/*#2f6*/}
-body{background:black;width:98%;
-    margin:0 auto;border:2px solid black;
+html{/*overflow:hidden;*/background:orangered;cursor: url("cur.cur"), auto;/*#2f6*/}
+body{background: #333;;width:97%;
+    margin:0 auto;border:2px 0px solid orangered;
     border-bottom-left-radius: 50px 20px;
     border-bottom-right-radius: 50px 20px;}
     wrapper{text-align:center}
@@ -61,7 +61,7 @@ padding-right:1em;
 
 svg#personal{
     position: relative;
-    left:25%;
+    left:28%;
     filter: drop-shadow(rgba(255, 127, 0, 1) 0px 0px 10px);
     transition: 0.3s;
     opacity: 0.6;
@@ -74,8 +74,8 @@ svg#personal:hover{
 
 svg#accounts{
     position: relative;
-    right:25%;
-    filter: drop-shadow(rgba(255, 0, 0, 1) 0px 0px 100px);
+    right:28%;
+    filter: drop-shadow(rgba(255, 0, 0, 1) 0px 0px 50px);
     cursor: pointer;
 }
 
@@ -104,6 +104,76 @@ svg#accounts text{
 #btnControl:checked+label>svg>text{
     visibility: visible;
 }
+
+
+
+/**
+*Scrollbar
+/
+/*For webkit users*/
+html::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,1);
+    border-radius: 15px;
+    background-color: grey;
+}
+html::-webkit-scrollbar
+{
+    width: 20px;
+}
+html::-webkit-scrollbar-thumb
+{
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+
+
+
+
+/*for non moz and non webkit users*/
+html::scrollbar-track
+{
+    box-shadow: inset 0 0 8px rgba(0,0,0,1);
+    border-radius: 15px;
+    background-color: grey;
+}
+html::scrollbar
+{
+    width: 20px;
+}
+html::scrollbar-thumb
+{
+    border-radius: 15px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+
+/*For mozilla*/
+html::-moz-scrollbar-track
+{
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,1);
+    border-radius: 15px;
+    background-color: grey;
+}
+html::-moz-scrollbar
+{
+    width: 20px;
+}
+html::-moz-scrollbar-thumb
+{
+    border-radius: 15px;
+    -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+
+a.button,.dropdown-content>a.dropdown-item{
+font-weight: bolder;    
+}
+
 
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/
 /*
