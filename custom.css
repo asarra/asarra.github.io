@@ -176,6 +176,11 @@ font-weight: bolder;
 
 hr{border: 1px solid orangered;}
 
+
+.add_hr{text-decoration: underline solid orangered;
+    text-underline-position: under
+}
+
 a{text-decoration:none;color: #6ff}
 
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/

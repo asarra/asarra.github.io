@@ -7,7 +7,8 @@ setTimeout(function(){
 setTimeout(function(){
     dialogue.classList.remove('fa-eye');
     dialogue.classList.add('fa-smile-beam');
-    dialogue.innerHTML=" I am Mehmet-Ali!<hr>";},4000);
+    dialogue.classList.add('add_hr');
+    dialogue.innerHTML=" I am Mehmet-Ali!";},4000);
 const scale_factor=10, prefix=3;
 document.onkeydown = function _() {
     e = event.keyCode || window.event;
