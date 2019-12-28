@@ -29,6 +29,9 @@ document.onkeydown = function _() {
             break;
     }
 }
+
+
+
 function bright(){
     document.body.style.backgroundColor="#666";
 }
@@ -39,8 +42,9 @@ function original(){
     document.body.style.backgroundColor="#444";
 }
 
-var dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
-  event.stopPropagation();
-  dropdown.classList.toggle('is-active');
-});
+
+var menu = document.getElementById("menu");
+menu.addEventListener('click', function(event) {
+    event.stopPropagation();
+    menu.classList.toggle('is-active');
+  });

@@ -16,41 +16,45 @@
 
 	</head>
 	<body>
-		<header class="has-text-centered" style="background-color: grey;width:100%;top:0;position: sticky;z-index: 1;">
-
-			<div class="dropdown">
+			<div id="menu" class="dropdown" style="top:0;position: sticky;z-index: 1; padding: 1em;">
 				<div class="dropdown-trigger">
-				  <button class="button is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
-					<i class="fas fa-edit"></i>&nbsp;Mode
+				  <button class="button">
+					<i class="fas fa-bars"></i>
 				  </button>
 				</div>
-				<div class="dropdown-menu" id="dropdown-menu" role="menu">
+				<div class="dropdown-menu has-text-left" id="dropdown-menu">
 				  <div class="dropdown-content">
-					<a class="dropdown-item is-dark" onClick="dark()">
-					  Dark mode
+
+						  <list id="list" class="dropdown-item" style="border:solid #888 1px;">
+							<a class="dropdown-item is-dark" onClick="dark()">
+								<i class="fas fa-edit"></i>&nbsp;Dark mode
+							</a>
+							<a class="dropdown-item" onClick="bright()">
+								<i class="fas fa-edit"></i>&nbsp;Bright mode
+							</a>
+							<a class="dropdown-item" onClick="bright()">
+								<i class="fas fa-edit"></i>&nbsp;Outrun 1986 mode *soon*
+							  </a>
+							<hr class="dropdown-divider">
+							<a class="dropdown-item" onClick="original()">
+								<i class="fas fa-pen-nib"></i>&nbsp;Original mode
+							</a>
+						</list>
+
+					<a class="button dropdown-item">
+					Blog
 					</a>
-					<a class="dropdown-item" onClick="bright()">
-					  Bright mode
+					<a class="button dropdown-item">
+					Imprint
 					</a>
-					<a class="dropdown-item" onClick="bright()">
-						Outrun 1986 mode *soon*
-					  </a>
-					<hr class="dropdown-divider">
-					<a class="dropdown-item" onClick="original()">
-					  Original mode
-					</a>
-				  </div>
+
+
+				</div>
 				</div>
 			  </div>
 
-			  <a class="button is-dark">
-				Blog
-			  </a>
-			  <a class="button is-dark">
-				Imprint
-			  </a>
 
-	</header>
+
 		<wrapper>
 			<!--Begrüßung-->
 			<div>

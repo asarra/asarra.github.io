@@ -170,7 +170,7 @@ html::-moz-scrollbar-thumb
 }
 
 
-a.button,.dropdown-content>a.dropdown-item{
+a.dropdown-item,a.button,.dropdown-content>a.dropdown-item{
 font-weight: bolder;    
 }
 
