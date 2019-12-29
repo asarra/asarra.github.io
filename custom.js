@@ -9,6 +9,8 @@ setTimeout(function(){
     dialogue.classList.add('fa-smile-beam');
     dialogue.classList.add('add_hr');
     dialogue.innerHTML=" I am Mehmet-Ali!";},4000);
+
+
 const scale_factor=10, prefix=3;
 document.onkeydown = function _() {
     e = event.keyCode || window.event;
@@ -48,4 +50,5 @@ var menu = document.getElementById("menu");
 menu.addEventListener('click', function(event) {
     event.stopPropagation();
     menu.classList.toggle('is-active');
-  });
+});
+
