@@ -206,7 +206,18 @@ a{text-decoration:none;color: #6ff}
     transform: rotateY(45deg);
 }
 
-
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 97%;}  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: orangered;
+    width: 0%;
+  }
 
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/
 /*
