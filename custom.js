@@ -1,34 +1,58 @@
-var dialogue=document.getElementById("greeting")
-dialogue.style.cssText="position:relative;font-size:2.5em";
-setTimeout(function(){
-    dialogue.classList.remove('fa-hand-peace');    
-    dialogue.classList.add("fa-eye");
-    dialogue.innerHTML=" I am glad to see you!";},2000);
-setTimeout(function(){
-    dialogue.classList.remove('fa-eye');
-    dialogue.classList.add('fa-smile-beam');
-    dialogue.classList.add('add_hr');
-    dialogue.innerHTML=" I am Mehmet-Ali!";},4000);
+window.onload = function() {
+    var dialogue=document.getElementById("greeting")
+    dialogue.style.cssText="position:relative;font-size:2.5em";
+    setTimeout(function(){
+        dialogue.classList.remove('fa-hand-peace');    
+        dialogue.classList.add("fa-eye");
+        dialogue.innerHTML=" I am ...";},2000);
+    setTimeout(function(){
+        dialogue.classList.remove('fa-eye');
+        dialogue.classList.add('fa-smile-beam');
+        dialogue.classList.add('add_hr');
+        dialogue.innerHTML=" Mehmet-Ali!";},4000);
+}
+
 
 
 const scale_factor=10, prefix=3;
 document.onkeydown = function _() {
     e = event.keyCode || window.event;
+    var personal = document.getElementById("personal");
+    var hero = document.getElementById("hero");
+    var accounts = document.getElementById("accounts");
+    var superToggle = function(element, class0, class1) {
+        if(!element.classList.toggle(class0)){
+            element.classList.toggle(class1);            
+        }
+    }
     switch(e){
         case 32:
+            //Leertaste
             window.scrollBy({top: prefix*10*scale_factor,left: 0});
             break;
         case 38:
             window.scrollBy({top: -1*prefix*scale_factor,left: 0});
             break;
         case 40:
+            //nach unten
             window.scrollBy({top: prefix*scale_factor,left: 0});
+            superToggle(personal,"turn_right", "turn_back");
+            superToggle(hero,"turn_right", "turn_back");
+            superToggle(accounts,"turn_right", "turn_back");
             break;
         case 37:
+            //nach links
             window.scrollBy({top: 0,left: -1*prefix*scale_factor});
+            superToggle(personal,"turn_right", "turn_back");
+            superToggle(hero,"turn_right", "turn_back");
+            superToggle(accounts,"turn_right", "turn_back");
             break;
         case 39:
-            window.scrollBy({top: 0,left: prefix*scale_factor});
+            //nach rechts
+            window.scrollBy({top: 0,left: prefix*scale_factor});            
+            superToggle(personal,"turn_right", "turn_back");
+            superToggle(hero,"turn_right", "turn_back");
+            superToggle(accounts,"turn_right", "turn_back");
             break;
     }
 }

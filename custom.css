@@ -7,8 +7,7 @@
 *{font-family:'thin',Georgia,sans-serif;}
 h1,h2,h3,h4,h5,h6{
     font-family:'bold',
-    Georgia,sans-serif;padding-top: 1em;
-    padding-bottom: 1em;}
+    Georgia,sans-serif;padding-top: 1em;padding-bottom: 1em;}
 h1{font-size: xx-large;}
 h4{font-size: x-large;}
 p{font-size: larger;}
@@ -177,11 +176,37 @@ font-weight: bolder;
 hr{border: 1px solid orangered;}
 
 
-.add_hr{text-decoration: underline solid orangered;
-    text-underline-position: under
+.add_hr{display:inline-block;
+    border-bottom:3px solid orangered;
+    padding-bottom:2px;
+    border-radius: 20px;
+}
+
+.has_margin_bottom{margin-bottom: 1em;}
+#greeting{
+    padding-bottom:0em;
+    padding-bottom:2px;
 }
 
 a{text-decoration:none;color: #6ff}
+
+.turn_back{
+    transition:all 1s;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.turn_right{
+    transition:all 1s;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotateY(45deg);
+    transform: rotateY(45deg);
+}
+
+
 
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/
 /*
