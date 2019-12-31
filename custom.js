@@ -1,11 +1,30 @@
+const scale_factor=10, prefix=3;
+var dialogue=document.getElementById("greeting");
+var personal = document.getElementById("personal");
+var hero = document.getElementById("hero");
+var accounts = document.getElementById("accounts");
+var menu = document.getElementById("menu");
+var superToggle = function(element, class0, class1) {
+    if(!element.classList.toggle(class0)){
+        element.classList.toggle(class1);
+    }
+}
+
 window.onload = function() {
-    var dialogue=document.getElementById("greeting")
+    setTimeout(function(){
+        this.personal.style.transform="translate(0,1em)";
+        this.hero.style.transform="translate(0,1em)";
+        this.accounts.style.transform="translate(0,1em)";
+    },1000);
     dialogue.style.cssText="position:relative;font-size:2.5em";
     setTimeout(function(){
+        this.personal.style.transform="translate(0,0)";
+        this.hero.style.transform="translate(0,0)";
+        this.accounts.style.transform="translate(0,0)";
         dialogue.classList.remove('fa-hand-peace');    
         dialogue.classList.add("fa-eye");
         dialogue.innerHTML=" I am ...";},2000);
-    setTimeout(function(){
+    setTimeout(function(){        
         dialogue.classList.remove('fa-eye');
         dialogue.classList.add('fa-smile-beam');
         dialogue.classList.add('add_hr');
@@ -13,18 +32,8 @@ window.onload = function() {
 }
 
 
-
-const scale_factor=10, prefix=3;
 document.onkeydown = function _() {
     e = event.keyCode || window.event;
-    var personal = document.getElementById("personal");
-    var hero = document.getElementById("hero");
-    var accounts = document.getElementById("accounts");
-    var superToggle = function(element, class0, class1) {
-        if(!element.classList.toggle(class0)){
-            element.classList.toggle(class1);            
-        }
-    }
     switch(e){
         case 32:
             //Leertaste
@@ -70,7 +79,6 @@ function original(){
 }
 
 
-var menu = document.getElementById("menu");
 menu.addEventListener('click', function(event) {
     event.stopPropagation();
     menu.classList.toggle('is-active');
