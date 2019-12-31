@@ -27,7 +27,6 @@ body{background: #444;;width:97%;
 .child{border:2px solid #BBB;
     padding: 0.5em;
     width:45%;
-    height: 100%;
     margin:1em;border-radius: 5px}
 .container{display: flex;
     justify-content:space-evenly;flex-wrap:wrap;
