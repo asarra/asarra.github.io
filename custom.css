@@ -215,8 +215,12 @@ a{text-decoration:none;color: #6ff}
     height: 8px;
     background: orangered;
     width: 0%;
-  }
+}
 
+.codearea{
+    background-color: #000;
+    border-radius: 15px;
+}
 /*ZUM DEBUGGEN:https://css-tricks.com/findingfixing-unintended-body-overflow/*/
 /*
 * {

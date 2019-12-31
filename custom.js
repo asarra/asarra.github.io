@@ -72,7 +72,7 @@ function bright(){
     document.body.style.backgroundColor="#666";
 }
 function dark(){
-    document.body.style.backgroundColor="#000";
+    document.body.style.backgroundColor="#222";
 }
 function original(){
     document.body.style.backgroundColor="#444";
