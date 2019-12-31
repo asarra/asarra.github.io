@@ -26,7 +26,7 @@ body{background: #444;;width:97%;
 /*img{height:34%;top:-14em;background-size:cover;position:relative;display:block;margin:auto;z-index:1;opacity: .1}*/
 .child{border:2px solid #BBB;
     padding: 0.5em;
-    width:45%;
+    width:46%;
     margin:1em;border-radius: 5px}
 .container{display: flex;
     justify-content:space-evenly;flex-wrap:wrap;
