@@ -12,19 +12,19 @@ var superToggle = function(element, class0, class1) {
 
 window.onload = function() {
     setTimeout(function(){
-        this.personal.style.transform="translate(0,1em)";
-        this.hero.style.transform="translate(0,1em)";
-        this.accounts.style.transform="translate(0,1em)";
+        personal.style.transform="translate(0,1em)";
+        hero.style.transform="translate(0,1em)";
+        accounts.style.transform="translate(0,1em)";
     },1000);
     dialogue.style.cssText="position:relative;font-size:2.5em";
     setTimeout(function(){
-        this.personal.style.transform="translate(0,0)";
-        this.hero.style.transform="translate(0,0)";
-        this.accounts.style.transform="translate(0,0)";
+        personal.style.transform="";
+        hero.style.transform="";
+        accounts.style.transform="";
         dialogue.classList.remove('fa-hand-peace');    
         dialogue.classList.add("fa-eye");
         dialogue.innerHTML=" I am ...";},2000);
-    setTimeout(function(){        
+    setTimeout(function(){
         dialogue.classList.remove('fa-eye');
         dialogue.classList.add('fa-smile-beam');
         dialogue.classList.add('add_hr');
