@@ -70,12 +70,30 @@ document.onkeydown = function _() {
 
 function bright(){
     document.body.style.backgroundColor="#666";
+    personal.getElementsByTagName("path")[0].setAttribute("fill","orange");
+    accounts.getElementsByTagName("path")[0].style="fill:orange";//setAttribute("fill","black");
+    document.getElementsByTagName("img")[0].style="opacity:1";
+    document.getElementsByTagName("img")[1].style="opacity:1";
+    hero.getElementsByTagName("path")[0].style="opacity:1";//setAttribute("fill","black");
+    accounts.getElementsByTagName("path")[0].style="opacity:1";//setAttribute("fill","black");    
 }
 function dark(){
     document.body.style.backgroundColor="#222";
+    personal.getElementsByTagName("path")[0].setAttribute("fill","#FF8C00");
+    accounts.getElementsByTagName("path")[0].style="fill:#FF8C00";//setAttribute("fill","black");
+    document.getElementsByTagName("img")[0].style="opacity:0.3";
+    document.getElementsByTagName("img")[1].style="opacity:0.3";
+    hero.getElementsByTagName("path")[0].style="opacity:0.6";//setAttribute("fill","black");
+    accounts.getElementsByTagName("path")[0].style="opacity:0.8";//setAttribute("fill","black");    
 }
 function original(){
     document.body.style.backgroundColor="#444";
+    personal.getElementsByTagName("path")[0].setAttribute("fill","orange");
+    accounts.getElementsByTagName("path")[0].style="fill:orange";//setAttribute("fill","black");
+    document.getElementsByTagName("img")[0].style="opacity:1";
+    document.getElementsByTagName("img")[1].style="opacity:1";
+    hero.getElementsByTagName("path")[0].style="opacity:1";//setAttribute("fill","black");
+    accounts.getElementsByTagName("path")[0].style="opacity:1";//setAttribute("fill","black");
 }
 
 
