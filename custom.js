@@ -10,27 +10,6 @@ var superToggle = function(element, class0, class1) {
     }
 }
 
-window.onload = function() {
-    setTimeout(function(){
-        personal.style.transform="translate(0,1em)";
-        hero.style.transform="translate(0,1em)";
-        accounts.style.transform="translate(0,1em)";
-    },1000);
-    dialogue.style.cssText="position:relative;font-size:2.5em";
-    setTimeout(function(){
-        personal.style.transform="";
-        hero.style.transform="";
-        accounts.style.transform="";
-        dialogue.classList.remove('fa-hand-peace');    
-        dialogue.classList.add("fa-eye");
-        dialogue.innerHTML=" I am ...";},2000);
-    setTimeout(function(){
-        dialogue.classList.remove('fa-eye');
-        dialogue.classList.add('fa-smile-beam');
-        dialogue.classList.add('add_hr');
-        dialogue.innerHTML=" Mehmet-Ali!";},4000);
-}
-
 
 document.onkeydown = function _() {
     e = event.keyCode || window.event;
@@ -67,8 +46,32 @@ document.onkeydown = function _() {
 }
 
 
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+  
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+
+
 
 function bright(){
+    setCookie("mode","bright",7);
     document.body.style.backgroundColor="#666";
     personal.getElementsByTagName("path")[0].setAttribute("fill","orange");
     accounts.getElementsByTagName("path")[0].style="fill:orange";//setAttribute("fill","black");
@@ -78,6 +81,7 @@ function bright(){
     accounts.getElementsByTagName("path")[0].style="opacity:1";//setAttribute("fill","black");    
 }
 function dark(){
+    setCookie("mode","dark",7);
     document.body.style.backgroundColor="#222";
     personal.getElementsByTagName("path")[0].setAttribute("fill","#FF8C00");
     accounts.getElementsByTagName("path")[0].style="fill:#FF8C00";//setAttribute("fill","black");
@@ -87,6 +91,7 @@ function dark(){
     accounts.getElementsByTagName("path")[0].style="opacity:0.8";//setAttribute("fill","black");    
 }
 function original(){
+    setCookie("mode","original",7);
     document.body.style.backgroundColor="#444";
     personal.getElementsByTagName("path")[0].setAttribute("fill","orange");
     accounts.getElementsByTagName("path")[0].style="fill:orange";//setAttribute("fill","black");
@@ -107,4 +112,39 @@ window.onscroll = function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+window.onload = function() {
+    var mode = getCookie("mode");
+
+    if (mode){
+        if (mode==="bright"){
+            bright();
+        }
+        else if (mode==="dark"){
+            dark();
+        }
+        else if (mode==="original"){
+            original();
+        }
+    }
+
+    setTimeout(function(){
+        personal.style.transform="translate(0,1em)";
+        hero.style.transform="translate(0,1em)";
+        accounts.style.transform="translate(0,1em)";
+    },1000);
+    dialogue.style.cssText="position:relative;font-size:2.5em";
+    setTimeout(function(){
+        personal.style.transform="";
+        hero.style.transform="";
+        accounts.style.transform="";
+        dialogue.classList.remove('fa-hand-peace');    
+        dialogue.classList.add("fa-eye");
+        dialogue.innerHTML=" I am ...";},2000);
+    setTimeout(function(){
+        dialogue.classList.remove('fa-eye');
+        dialogue.classList.add('fa-smile-beam');
+        dialogue.classList.add('add_hr');
+        dialogue.innerHTML=" Mehmet-Ali!";},4000);
 }
