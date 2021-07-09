@@ -1,13 +1,12 @@
 var interval = setInterval(checkTime, 100);
 var skillset = document.getElementById("skillset");
 
-
-
 // modified ytplayer code: https://developers.google.com/youtube/player_parameters#IFrame_Player_API
 var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/player_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
   var player;
   function onYouTubePlayerAPIReady() {
       player = new YT.Player('skills_video', {
