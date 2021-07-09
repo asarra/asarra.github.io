@@ -74,9 +74,13 @@
 		<h1 style="font-size: 3vw;" class="is_orange" id="skills"> <span class="icon"> <svg width="100%"> <circle cx="1" cy="30" r="1" fill="orange"></circle> <line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/> <line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/> </svg> </span> <span class="text"> &nbspSkills&nbsp </span> <span class="icon"> <svg width="100%"> <circle cx="20" cy="30" r="1" fill="orange"></circle> <line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/> <line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/> </svg> </span></h1>
 
 		<div class="display: flex; justify-content: center; align-items: center; flex-flow: column wrap">
-			<video style="margin: 2em; border:2px solid #FA0; border-radius: 15px;" width="80%" id="skills_video" src="https://r1---sn-8xgn5uxa-quhl.googlevideo.com/videoplayback?expire=1625813495&ei=l53nYLfACY6ygAfiz47YAw&ip=2001%3A16b8%3A181b%3A1600%3A1163%3A6c55%3Af699%3A45fb&id=o-AEmXqRMne-07xnk4dSLr7juIUFW-1GLQSKPespI2UAij&itag=22&source=youtube&requiressl=yes&mh=P8&mm=31%2C26&mn=sn-8xgn5uxa-quhl%2Csn-5hne6nzs&ms=au%2Conr&mv=m&mvi=1&pl=40&initcwndbps=1821250&vprv=1&mime=video%2Fmp4&ns=YUQHcLpR5p_A12y6QqlVtxoG&ratebypass=yes&dur=37.918&lmt=1625761712042345&mt=1625791285&fvip=1&fexp=24001373%2C24007246&c=WEB&txp=6216222&n=dXir8YeDGkQa1h&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgZFL6P1rCuRMI4JYWXF6Qgl63Ga1K-2rvlN4GZ0e-mPcCIAr39g3NSiB0dZ3GBWo-h451p1ydpKTuKtFEcQvtUget&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgVxLDA253aNYrMCOj44xgqZzyB1QF4GzrV1hjGoZaG8cCIHrFI_4dpRcRBvvMJgeWDBHRAvNX3aJrOROQqyOUaK6Y" type="video/mp4" controls preload="auto">
-				Your browser does not support the video tag.
-			</video>
+
+			<div style="width: 80%;margin: 0 auto;"><!--Need this to center and resize it-->
+				<div style="margin: 2em; border:2px solid #FA0; border-radius: 15px; position: relative;padding-bottom: calc(56.25% - 2em);padding-top: 0;height: 0;overflow: hidden;"><!--Need this to make the video responsive-->
+					<div style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" id="skills_video">
+					</div>
+				</div>
+			</div>
 
 			<p id="skillset" style ="display:inline-block;padding: 2em;margin:1em;   font-size: 2.5vw;" class="has_borders codearea  is_orange">
 					{"skillset": [<span class="is_white">"HTML5", "CSS3", "Python", "Java"</span>,
