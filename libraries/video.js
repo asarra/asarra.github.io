@@ -1,6 +1,6 @@
 var skillset = document.getElementById("skillset");
 var thumbnail = document.getElementById('thumbnail');
-var id = 'aPrGES-PcQ4';
+var id = 'XbJKyNycJHc';
 var player;
 var interval = setInterval(checkTime, 100);
 
@@ -50,10 +50,10 @@ function loadVideo(){
           player.pauseVideo();
     }
   }
-  
+
   function checkTime() {
     if (player) (player.playerInfo.currentTime>=24 & player.playerInfo.currentTime <= 32) ? skillset.style.display = "inline-block" : skillset.style.display = "none";
-  }  
+  }
 
 //I disable it in JS instead of in HTML/CSS to ensure that skillset will be shown even if JS is deactivated
 skillset.style.display = "none";
