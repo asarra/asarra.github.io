@@ -52,7 +52,7 @@ function loadVideo(){
   }
 
   function checkTime() {
-    if (player) (player.playerInfo.currentTime>=24 & player.playerInfo.currentTime <= 32) ? skillset.style.display = "inline-block" : skillset.style.display = "none";
+    if (player) (player.playerInfo.currentTime>=24 & player.playerInfo.currentTime <= 38) ? skillset.style.display = "inline-block" : skillset.style.display = "none";
   }
 
 //I disable it in JS instead of in HTML/CSS to ensure that skillset will be shown even if JS is deactivated
