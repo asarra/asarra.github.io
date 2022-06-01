@@ -18,7 +18,8 @@
 	<div class="progress-bar" id="myBar"></div>
 	<wrapper>
 		<div class="has_borders">
-			<h1 style="font-size: 5vw;" id="greeting" class="has_margin_bottom is_orange far fa-hand-peace"> Hello there!</h1></div>
+			<h1 style="font-size: 5vw;" id="greeting" class="has_margin_bottom is_orange far fa-hand-peace"> Hello there!</h1>
+		</div>
 		<div id="hexagon_group">
 			<svg id="personal" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
 				<path fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
@@ -53,9 +54,15 @@
 		<div class="has-text-centered">
 			<button id="custom_button" class=" button is-dark is-rounded" id="scrollnow" onClick="document.getElementById('skills').scrollIntoView({block:'start',behavior:'smooth'});"> <i class="fas fa-angle-double-down"></i></button>
 		</div>
+
 		<svg viewBox="0 0 120 30">
-			<circle fill="orangered" cx="0" cy="15" r="5" />
-			<circle fill="orangered" cx="120" cy="15" r="5" /> </svg>
+			<path fill="orangered" d="M30,15 L0,6 V0 z" />
+			<path fill="orangered" d="M10,15 L0,6 V10 z" />
+
+			<path fill="orangered" d="M90,15 L120,6 V0 z" />
+			<path fill="orangered" d="M100,15 L120,6 V10 z" />
+		</svg>
+
 		<setspace></setspace>
 		<h1 style="font-size: 3vw;" class="is_orange" id="skills"> <span class="icon"> <svg width="100%"> <circle cx="1" cy="30" r="1" fill="orange"></circle> <line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/> <line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/> </svg> </span> <span class="text"> &nbspSkills&nbsp </span> <span class="icon"> <svg width="100%"> <circle cx="20" cy="30" r="1" fill="orange"></circle> <line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/> <line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/> </svg> </span></h1>
 
