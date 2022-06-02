@@ -16,20 +16,20 @@
 <body>
 	<div class="progress-bar" id="myBar"></div>
 	<div class="has_borders">
-		<h1 style="font-size: 5vw;" id="greeting" class="has_margin_bottom is_orange far fa-hand-peace"> Hello there!</h1>
+		<h1 id="greeting" class="greeting has_margin_bottom is_orange far fa-hand-peace"> Hello there!</h1>
 	</div>
 	<div id="hexagon_group">
-		<svg id="personal" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+		<svg id="personal" class="personal" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
 			<path fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
-			<text x="26" y="120" stroke="black" stroke-opacity="1" style="font-size: x-large;">I'm a software eng. & started</text>
-			<text x="26" y="140" stroke="black" stroke-opacity="1" style="font-size: x-large;">my journey by the age of 8.</text>
-			<text x="40" y="190" stroke="black" stroke-opacity="1" style="font-size: x-large;">Since that age I am doing</text>
-			<text x="40" y="210" stroke="black" stroke-opacity="1" style="font-size: x-large;">web design, video editing,</text>
-			<text x="60" y="230" stroke="black" stroke-opacity="1" style="font-size: x-large;">chat bot design, etc. </text>
-			<text x="150" y="280" stroke="black" stroke-opacity="1" style="font-size: x-large;">I speak German,</text>
-			<text x="108" y="300" stroke="black" stroke-opacity="1" style="font-size: x-large;">English and Turkish.</text>
+			<text x="26" y="120" stroke="black" stroke-opacity="1">I'm a software eng. & started</text>
+			<text x="26" y="140" stroke="black" stroke-opacity="1">my journey by the age of 8.</text>
+			<text x="40" y="190" stroke="black" stroke-opacity="1">Since that age I am doing</text>
+			<text x="40" y="210" stroke="black" stroke-opacity="1">web design, video editing,</text>
+			<text x="60" y="230" stroke="black" stroke-opacity="1">chat bot design, etc. </text>
+			<text x="150" y="280" stroke="black" stroke-opacity="1">I speak German,</text>
+			<text x="108" y="300" stroke="black" stroke-opacity="1">English and Turkish.</text>
 		</svg>
-		<svg id="hero" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400" style="filter: drop-shadow(rgba(255, 127, 0, 1) 0px 0px 10px);">
+		<svg id="hero" class="hero" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
 			<defs>
 				<pattern id="image" height="100%" width="100%" patternContentUnits="objectBoundingBox">
 					<image xlink:href="./images/fly3.avif" preserveAspectRatio="xMinYMin" width="1.35" height="1"/>
@@ -42,12 +42,20 @@
 		</svg>
 		<input type="checkbox" id="btnControl" />
 		<label class="btn" for="btnControl">
-			<svg version="1.1" id="accounts" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+			<svg version="1.1" id="accounts" class="accounts" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
 				<path class="dynamic-color" fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
-				<text x="125" y="120" stroke="black" stroke-opacity="1"> <a href="https://www.linkedin.com/in/mehmet-ali-asar-725252162" style="font-size: x-large;" target="_blank">Linkedin&#x1F855;</a> </text>
-				<text x="125" y="180" stroke="black" stroke-opacity="1"> <a href="https://gitlab.com/asar_ma" target="_blank" style="font-size: x-large;">GitLab&#x1F855;</a> </text>
-				<text x="125" y="240" stroke="black" stroke-opacity="1"> <a href="https://github.com/asarra" target="_blank" style="font-size: x-large;">GitHub&#x1F855;</a> </text>
-				<text x="125" y="300" stroke="black" stroke-opacity="1"> <a href="mailto:mehmet-ali.asar@protonmail.com" target="_blank" style="font-size: x-large;">Email&#x1F855;</a> </text>
+				<text x="125" y="120" stroke="black" stroke-opacity="1">
+					<a href="https://www.linkedin.com/in/mehmet-ali-asar-725252162" target="_blank">Linkedin&#x1F855;</a>
+				</text>
+				<text x="125" y="180" stroke="black" stroke-opacity="1">
+					<a href="https://gitlab.com/asar_ma" target="_blank">GitLab&#x1F855;</a>
+				</text>
+				<text x="125" y="240" stroke="black" stroke-opacity="1">
+					<a href="https://github.com/asarra" target="_blank">GitHub&#x1F855;</a>
+				</text>
+				<text x="125" y="300" stroke="black" stroke-opacity="1">
+					<a href="mailto:mehmet-ali.asar@protonmail.com" target="_blank">Email&#x1F855;</a>
+				</text>
 			</svg>
 		</label>
 	</div>
@@ -67,7 +75,7 @@
 	</svg>
 
 
-	<h1 style="font-size: 3vw;" class="is_orange" id="skills">
+	<h1 class="section_title is_orange" id="skills">
 		<span class="icon">
 			<svg width="3vw" height="3vh" viewbox="0 0 21 31">
 				<circle cx="1" cy="30" r="1" fill="orange"></circle>
@@ -85,23 +93,20 @@
 		</span>
 	</h1>
 
-	<div class="display: flex; justify-content: center; align-items: center; flex-flow: column wrap">
-
-		<div style="width: 80%;margin: 0 auto;"><!--Need this to center and resize it-->
-			<div style="margin: 1.7em; border:2px solid #FA0; border-radius: 15px; position: relative;padding-bottom: calc(56.25% - 2em);padding-top: 0;height: 0;overflow: hidden;"><!--Need this to make the video responsive-->
-				<div id="skills_video" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
-					<img id="thumbnail" src="data:," style="position: absolute; top: 0;left: 0;width: 100%;height: 100%; cursor: pointer;" onclick="loadVideo()" alt="Video thumbnail"/>
-					<!--Brauche beim <img> src="data:,", damit w3 validiert-->
-				</div>
+	<div class="is_video_centered_and_resized">
+		<div class="is_video_responsive_and_more">
+			<div id="skills_video" class="video">
+				<img id="thumbnail" class="thumbnail" src="data:," onclick="loadVideo()" alt="Video thumbnail"/>
+				<!--Brauche beim <img> src="data:,", damit w3 validiert-->
 			</div>
 		</div>
-
-		<p id="skillset" style="display:inline-block;padding: 2em;margin:1em;   font-size: 2.5vw;" class="has_borders codearea  is_orange">
-				{"skillset": [<span class="is_white">"HTML5", "CSS3", "Python", "Java", "C++"</span>,
-				<br>"Networking (<span class="is_white">Cisco Certificate-CNE</span>)",
-				<br> "Basics of these: <span class="is_white">Blender, Unity, GLSL, SQL, PHP, C, JavaScript</span>"]}
-			</p>
 	</div>
+
+	<p id="skillset" class="has_borders codearea is_orange">
+			{"skillset": [<span class="is_white">"HTML5", "CSS3", "Python", "Java", "C++"</span>,
+			<br>"Networking (<span class="is_white">Cisco Certificate-CNE</span>)",
+			<br> "Basics of these: <span class="is_white">Blender, Unity, GLSL, SQL, PHP, C, JavaScript</span>"]}
+	</p>
 
 	<div class="has-text-centered">
 		<button class="custom_button is-dark is-rounded" onClick="document.getElementById('projects').scrollIntoView({block:'start',behavior:'smooth'});">
@@ -117,7 +122,7 @@
 		<path fill="orangered" d="M100,15 L120,24 V30 z" />
 	</svg>
 
-	<h1 class="is_orange" id="projects" style="font-size: 3vw;">
+	<h1 class="section_title is_orange" id="projects">
 	<svg class="icon" width="3vw" height="3vh" viewbox="0 0 21 31">
 		<circle cx="1" cy="30" r="1" fill="orange"></circle>
 		<line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/>
@@ -136,7 +141,7 @@
 			<a href="https://github.com/asarra/NEAT-Racer" target="_blank">
 				<h4>AI experiment: NEAT-Racer</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/neat-racer.avif" alt="AI cars racing against each other"/>
 			<p>
 				I've made this AI racer game. It uses NEAT and lots of Feed-Forward neural networks.
@@ -147,7 +152,7 @@
 			<a href="https://github.com/asarra/Synthrider---Live-Wallpaper-OpenGL-" target="_blank">
 				<h4>Live wallpaper: Synthrider</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/synthrider.avif" alt="Driver driving in a synhwavy and cosmic environment"/>
 			<p>
 				I did create this 3D live wallpaper to learn OpenGL. I used OpenGL, GLSL, C++, stb_image, GLEW and GLFW.
@@ -158,7 +163,7 @@
 			<a href="https://github.com/asarra/Nightcity" target="_blank">
 				<h4>3D(VR) world: Nightcity</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/vrworld.avif" alt="3D environment"/>
 			<p>
 				I did create this 3D world to meet my friends in VRChat. I used Blender, Unity and the VRChat SDK 3 for Unity.
@@ -169,7 +174,7 @@
 			<a href="https://github.com/asarra/The-Observing-Void" target="_blank">
 				<h4>AR experiment: Observing Void</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/ar.avif" alt="A creepy entity is watching you"/>
 			<p>
 				I made an AR experiment where you can place a creepy object that observes you in your room. This experiment uses Google's WebXR and ThreeJS.
@@ -180,7 +185,7 @@
 			<a href="https://github.com/asarra/KatanaMod" target="_blank">
 				<h4>Minecraft mod: Katana</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/katana.avif" alt="The glowing katana"/>
 			<p>
 				I made a Minecraft mod that creates a craftable Katana (sword type item), has a fragment shader (to add emissiveness), a custom sweep animation and obviously a texture.
@@ -191,7 +196,7 @@
 			<a href="https://github.com/asarra/3D-web-experiment-Streamer" target="_blank">
 				<h4>3D web experiment: Streamer</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="images/three.js.avif" alt="A 3D environment with a monitor that shows a real world application's content"/>
 			<p>
 				This is a 3D web experiment. It uses GLTF models and ThreeJS.
@@ -200,7 +205,7 @@
 
 		<div class="child">
 			<a href="https://github.com/asarra/PM-Dungeon" target="_blank"><h4>Java game</h4></a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/pm-dungeon.avif" alt="Player in a dungeon full of monsters"/>
 			<p>
 				I've created a roguelike and 2D sprites based Java game called PM-Dungeon with my team. This was a group assignment at our university.
@@ -209,7 +214,7 @@
 
 		<div class="child">
 			<a href="https://gitlab.com/asar_ma/Custom_Webserver" target="_blank"><h4>Webserver & client</h4></a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/webserver.avif" alt="Traffic between cient and server and demo of the result"/>
 			<p>
 				I wrote a basic HTTP/1.1 server and client in Python with static content.
@@ -220,7 +225,7 @@
 			<a href="https://github.com/asarra/asarra.github.io" target="_blank">
 				<h4>This website</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/website.avif" alt="Repository overview"/>
 			<p>
 				Oh, and obviously, this website is hosted on GitHub's servers as you can tell by the domain and the repository is public.
@@ -231,7 +236,7 @@
 			<a href="https://github.com/asarra/Server-monitoring" target="_blank">
 				<h4>Server monitor</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<img src="./images/server_monitor.avif" alt="WebApp that shows the server ressources and some server tools"/>
 			<p>
 				A server monitor that refreshes its content every second written in JavaScript, HTML, CSS and in PHP.
@@ -240,7 +245,7 @@
 
 
 		<div class="child"><a href="https://gitlab.com/asar_ma/Custom_w0rm" target="_blank"><h4>w0rm. Why?</h4></a>
-			<hr>
+			<hr class="projects_hr">
 			<p>
 				I have gotten into a challenge with someone from the USA. The person with the faster and smaller w0rm script would win. As you can tell, it was just for the fun of it and nothing serious.
 				<br>
@@ -248,7 +253,7 @@
 			</p>
 		</div>
 		<div class="child"><a href="https://github.com/asarra/TransparentRemote" target="_blank"><h4>Virtual KVM Switch</h4></a>
-			<hr>
+			<hr class="projects_hr">
 			<p>
 				I have created a "KVM switch" in Python. I wanted to switch between Arch Linux and a Windows 10 VM (with GPU and SSD Passthrough) and did not want to buy an actual KVM switch for 80 Euro :)
 			</p>
@@ -261,39 +266,39 @@
 					Bot Libraries
 				</h4>
 			</a>
-			<hr>
+			<hr class="projects_hr">
 			<p>
 				Click on the title to see the bot libraries!
 			</p>
 		</div>
-			<div style="display: none;" class="child hider"><a href="https://gist.github.com/asarra/14065b34bf87b4378868de23117aed35" target="_blank"><h4>Instagram Bot library</h4></a>
-				<hr>
+			<div class="child hider"><a href="https://gist.github.com/asarra/14065b34bf87b4378868de23117aed35" target="_blank"><h4>Instagram Bot library</h4></a>
+				<hr class="projects_hr">
 				<p>
 					It is capable of sending images and videos. Its main use is self-promotion on your own account.
 				</p>
 			</div>
-			<div style="display: none;" class="child hider"><a href="https://gitlab.com/asar_ma/Custom_Facebook_Library" target="_blank"><h4>Facebook Bot library</h4></a>
-				<hr>
+			<div class="child hider"><a href="https://gitlab.com/asar_ma/Custom_Facebook_Library" target="_blank"><h4>Facebook Bot library</h4></a>
+				<hr class="projects_hr">
 				<p>
 					It is capable of renewing tokens extracted from cookies, logging in, listening the FB servers for new notification, and sending messages by triggering the bot with specific key words.
 				</p>
 			</div>
 
-			<div style="display: none;" class="child hider"><a href="https://gist.github.com/asarra/8a5da6b039801be293af50baeeaf1d2f" target="_blank"><h4>Discord Bot library</h4></a>
-				<hr>
+			<div class="child hider"><a href="https://gist.github.com/asarra/8a5da6b039801be293af50baeeaf1d2f" target="_blank"><h4>Discord Bot library</h4></a>
+				<hr class="projects_hr">
 				<p>
 					This Discord library's development came to a stop once I was enrolled in college. It was able to send text messages.
 				</p>
 			</div>
 
-			<div style="display: none;" class="child hider"><a href="https://gitlab.com/vthrift/thriftos_linos" target="_blank"><h4>LINE Bot library</h4></a>
-				<hr>
+			<div class="child hider"><a href="https://gitlab.com/vthrift/thriftos_linos" target="_blank"><h4>LINE Bot library</h4></a>
+				<hr class="projects_hr">
 				<p>
 					I have created my own unofficial chat bot library that is written in Python. It used be active on the social media platform LINE.
 				</p>
 			</div>
-			<div style="display: none;" class="child hider"><a href="https://gist.github.com/asarra/dfc1351ac780f9dee135ac08b7f904c2" target="_blank"><h4>DevRant Bot library</h4></a>
-				<hr>
+			<div class="child hider"><a href="https://gist.github.com/asarra/dfc1351ac780f9dee135ac08b7f904c2" target="_blank"><h4>DevRant Bot library</h4></a>
+				<hr class="projects_hr">
 				<p>
 					This is a very ancient DevRant library I made from scratch in Python.
 				</p>
@@ -303,7 +308,7 @@
 				<a href="https://github.com/asarra/University-n-school-projects-experiences" target="_blank">
 					<h4>University and school projects experiences</h4>
 				</a>
-				<hr>
+				<hr class="projects_hr">
 				<p>
 					This is a collection of what I did during university and school times. IT related obviously.
 				</p>
