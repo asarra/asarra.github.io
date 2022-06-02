@@ -23,11 +23,11 @@ hr{background-color: orangered;margin: 0 0 1em 0;border:0;height: 0.3vh}
 
 .has_margin_bottom{margin-bottom:1em}#greeting{padding-bottom:0em;padding-bottom:2px}a{text-decoration:none;color:orange}a:hover{text-decoration:none;color:#6ff}.turn_back{transition:all 1s;-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}.turn_right{transition:all 1s;-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotateY(45deg);transform:rotateY(45deg)}.progress-bar{position:fixed;top:0;z-index:1;max-width:97%;height:8px;background:orangered;width:0%}.codearea{background-color:#000;border-radius:15px}
 @media screen and (max-width: 426px) {
-    .child img{height: 12vh;max-height: 100%;object-fit: contain}
+    .child img{height: 12vh;max-height: 100%;max-width: 100%;object-fit: contain}
 }
 @media screen and (min-width: 427px) {
-    .child img{height: 18vh;max-height: 100%;object-fit: contain}
+    .child img{height: 18vh;max-height: 100%;max-width: 100%;object-fit: contain}
 }
 @media screen and (min-width: 2560px) {
-    .child img{height: 24vh;max-height: 100%;object-fit: contain}
+    .child img{height: 24vh;max-height: 100%;max-width: 100%;object-fit: contain}
 }
