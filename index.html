@@ -19,9 +19,9 @@
 		<h1 id="greeting" class="greeting has_margin_bottom is_orange far fa-hand-peace"> Hello there!</h1>
 	</div>
 	<div id="hexagon_group">
-		<svg id="personal" class="personal" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+		<svg id="personal" class="personal" width="30%" height="30%" version="1.1" viewbox="0 0 346.41016151377545 400" xmlns="http://www.w3.org/2000/svg">
 			<path fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
-			<text x="26" y="120" stroke="black" stroke-opacity="1">I'm a software eng. & started</text>
+			<text x="26" y="120" stroke="black" stroke-opacity="1">I'm a software eng. &amp; started</text>
 			<text x="26" y="140" stroke="black" stroke-opacity="1">my journey by the age of 8.</text>
 			<text x="40" y="190" stroke="black" stroke-opacity="1">Since that age I am doing</text>
 			<text x="40" y="210" stroke="black" stroke-opacity="1">web design, video editing,</text>
@@ -29,7 +29,8 @@
 			<text x="150" y="280" stroke="black" stroke-opacity="1">I speak German,</text>
 			<text x="108" y="300" stroke="black" stroke-opacity="1">English and Turkish.</text>
 		</svg>
-		<svg id="hero" class="hero" version="1.1" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+
+		<svg id="hero" class="hero" width="30%" height="30%" version="1.1" viewbox="0 0 346.41016151377545 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<pattern id="image" height="100%" width="100%" patternContentUnits="objectBoundingBox">
 					<image xlink:href="./images/fly3.avif" preserveAspectRatio="xMinYMin" width="1.35" height="1"/>
@@ -40,9 +41,10 @@
 				Flying me
 			</desc>
 		</svg>
+
 		<input type="checkbox" id="btnControl" />
 		<label class="btn" for="btnControl">
-			<svg version="1.1" id="accounts" class="accounts" width="30%" height="30%" viewbox="0 0 346.41016151377545 400">
+			<svg id="accounts" class="accounts" width="30%" height="30%" version="1.1" viewbox="0 0 346.41016151377545 400" xmlns="http://www.w3.org/2000/svg">
 				<path class="dynamic-color" fill-opacity="1" stroke="orange" stroke-opacity="1" fill="orange" d="M173.20508075688772 0L346.41016151377545 100L346.41016151377545 300L173.20508075688772 400L0 300L0 100Z"></path>
 				<text x="125" y="120" stroke="black" stroke-opacity="1">
 					<a href="https://www.linkedin.com/in/mehmet-ali-asar-725252162" target="_blank">Linkedin&#x1F855;</a>
@@ -66,34 +68,15 @@
 		</button>
 	</div>
 
-	<svg viewBox="0 0 120 30">
-		<path fill="orangered" d="M30,15 L0,6 V0 z" />
-		<path fill="orangered" d="M10,15 L0,6 V10 z" />
+	<img src="./images/spikes_pointing_down.svg" alt="Spikes pointing down"/>
 
-		<path fill="orangered" d="M90,15 L120,6 V0 z" />
-		<path fill="orangered" d="M100,15 L120,6 V10 z" />
-	</svg>
-
-
-	<h1 class="section_title is_orange" id="skills">
-		<span class="icon">
-			<svg width="3vw" height="3vh" viewbox="0 0 21 31">
-				<circle cx="1" cy="30" r="1" fill="orange"></circle>
-				<line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/>
-				<line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/>
-			</svg>
-		</span>
-		<span class="text">Skills</span>
-		<span class="icon">
-			<svg width="3vw" height="3vh" viewbox="0 0 21 31">
-				<circle cx="20" cy="30" r="1" fill="orange"></circle>
-				<line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/>
-				<line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/>
-			</svg>
-		</span>
+	<h1 class="svg_and_titletext is_orange" id="skills">
+		<img class="resized_svg" src="./images/title_icon_left.svg" alt="Title icon left"/>
+		Skills
+		<img class="resized_svg is_mirrored" src="./images/title_icon_left.svg" alt="Title icon right"/>
 	</h1>
 
-	<div class="is_video_centered_and_resized">
+	<div class="video_glow is_video_centered_and_resized">
 		<div class="is_video_responsive_and_more">
 			<div id="skills_video" class="video">
 				<img id="thumbnail" class="thumbnail" src="data:," onclick="loadVideo()" alt="Video thumbnail"/>
@@ -114,26 +97,12 @@
 		</button>
 	</div>
 
-	<svg viewBox="0 0 120 30">
-		<path fill="orangered" d="M30,15 L0,24 V30 z" />
-		<path fill="orangered" d="M10,15 L0,24 V30 z" />
+	<img src="./images/spikes_pointing_up.svg" alt="Spikes pointing up"/>
 
-		<path fill="orangered" d="M90,15 L120,24 V30 z" />
-		<path fill="orangered" d="M100,15 L120,24 V30 z" />
-	</svg>
-
-	<h1 class="section_title is_orange" id="projects">
-	<svg class="icon" width="3vw" height="3vh" viewbox="0 0 21 31">
-		<circle cx="1" cy="30" r="1" fill="orange"></circle>
-		<line y2="20" x2="20" y1="0" x1="0" stroke-width="2" stroke="#ff7f00"/>
-		<line y2="30" x2="20" y1="10" x1="0" stroke-width="2" stroke="#ff7f00"/>
-	</svg>
-	<span class="text">Projects</span>
-	<svg class="icon" width="3vw" height="3vh" viewbox="0 0 21 31">
-		<circle cx="20" cy="30" r="1" fill="orange"></circle>
-		<line y2="20" x2="0" y1="0" x1="20" stroke-width="2" stroke="#ff7f00"/>
-		<line y2="30" x2="0" y1="0" x1="30" stroke-width="2" stroke="#ff7f00"/>
-	</svg>
+	<h1 class="svg_and_titletext is_orange" id="projects">
+		<img class="resized_svg" src="./images/title_icon_left.svg" alt="Title icon left"/>
+		Projects
+		<img class="resized_svg is_mirrored" src="./images/title_icon_left.svg" alt="Title icon right"/>
 	</h1>
 
 	<div class="container">
