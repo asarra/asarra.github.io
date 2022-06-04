@@ -1,12 +1,14 @@
 var skillset = document.getElementById("skillset");
 var thumbnail = document.getElementById('thumbnail');
-var id = 'XbJKyNycJHc';
+var id = 'FS1ywr8v1w0';
 var player;
 var interval = setInterval(checkTime, 100);
 
 function loadThumbnail(){
     //loads thumbnail with maximum image quality directly, if it exists, faster
-	  thumbnail.src="https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
+	  //thumbnail.src="https://img.youtube.com/vi/" + id + "/maxresdefault.jpg";
+    //temporarily disabled because the new video thumbnail is not available yet
+    thumbnail.src="https://img.youtube.com/vi/" + "XbJKyNycJHc" + "/maxresdefault.jpg";
 }
 
 function loadThumbnailFlexibler(){
