@@ -63,7 +63,7 @@
 	</div>
 
 	<div class="has-text-centered">
-		<button class="custom_button is-dark is-rounded" onClick="document.getElementById('skills').scrollIntoView({block:'start',behavior:'smooth'});">
+		<button id="to_skills_button" class="custom_button is-dark is-rounded">
 			<i class="fas fa-angle-double-down"></i>
 		</button>
 	</div>
@@ -79,7 +79,7 @@
 	<div class="video_glow is_video_centered_and_resized">
 		<div class="is_video_responsive_and_more">
 			<div id="skills_video" class="video">
-				<img id="thumbnail" class="thumbnail" src="data:," onclick="loadVideo()" alt="Video thumbnail"/>
+				<img id="thumbnail" class="thumbnail" src="data:," alt="Video thumbnail"/>
 				<!--Brauche beim <img> src="data:,", damit w3 validiert-->
 			</div>
 		</div>
@@ -92,7 +92,7 @@
 	</p>
 
 	<div class="has-text-centered">
-		<button class="custom_button is-dark is-rounded" onClick="document.getElementById('projects').scrollIntoView({block:'start',behavior:'smooth'});">
+		<button id="to_projects_button" class="custom_button is-dark is-rounded">
 			<i class="fas fa-angle-double-down"></i>
 		</button>
 	</div>
@@ -241,7 +241,7 @@
 
 
 		<div id="shower" class="child">
-			<a onClick="var hiders = document.getElementsByClassName('hider'); for(var i=0; i<hiders.length; i++){hiders.item(i).style.display='block'}; document.getElementById('shower').style.display='none'">
+			<a id="libraries_showing_button">
 				<h4>
 					Bot Libraries
 				</h4>
