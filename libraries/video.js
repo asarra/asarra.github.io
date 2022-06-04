@@ -30,6 +30,7 @@ function loadVideo(){
       player = new YT.Player('skills_video', {
           height: '1080',
           width: '1920',
+          host: 'https://www.youtube-nocookie.com',
           videoId: id,
           events: {
             onReady: onPlayerReady,
@@ -57,3 +58,5 @@ function loadVideo(){
 
 //I disable it in JS instead of in HTML/CSS to ensure that skillset will be shown even if JS is deactivated
 skillset.style.display = "none";
+
+loadThumbnail();
