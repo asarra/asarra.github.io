@@ -2,3 +2,9 @@
 @media screen and (max-width: 426px) {.child img{height: inherit;max-height: 100%;max-width: 100%;object-fit: contain}.resized_svg{height: 1vh;}}
 @media screen and (min-width: 427px) {.child img{height: 18vh;max-height: 100%;max-width: 100%;object-fit: contain}.resized_svg{height: 2.25vh;}}
 @media screen and (min-width: 2560px) {.child img{height: 24vh;max-height: 100%;max-width: 100%;object-fit: contain}.resized_svg{height: 3vh;}}
+
+/* Font Awesome 5 Free extraction*/
+.fa-hand-peace:before{content:"\f25b";display:inline-block;font-family:"FA5F";font-style:normal;line-height:1;font-weight:400}
+.fa-angle-double-down:before{content:"\f103";display:inline-block;font-family:"FA5F";font-style:normal;line-height:1;font-weight:900}
+@font-face{font-family:"FA5F";font-weight:400;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-regular-400.woff2) format("woff2")}
+@font-face{font-family:"FA5F";font-weight:900;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2) format("woff2")}
