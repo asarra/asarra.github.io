@@ -12,7 +12,7 @@ function loadThumbnail(){
 }
 
 function loadThumbnailFlexibler(){
-  //loads a thumbnail with shitty image quality slowly, but it is safe and flexible
+  //loads a thumbnail with low image quality slowly, but it is safe and flexible
   var url = "https://www.youtube.com/oembed?url=" + encodeURIComponent("https://www.youtube.com/watch?v=" + id) + "&format=json";
   fetch(url).then(function(response){return response.json()}).then(function(jsonResponse){
 	  thumbnail.src=jsonResponse.thumbnail_url;

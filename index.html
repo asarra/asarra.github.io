@@ -78,16 +78,18 @@
 		<img loading="lazy" class="resized_svg is_mirrored" src="./images/title_icon_left.svg" alt="Title icon right"/>
 	</h1>
 
-	<div class="video_glow is_video_centered_and_resized">
-		<div class="is_video_responsive_and_more">
-			<div id="skills_video" class="video">
-				<img loading="lazy" id="thumbnail" class="thumbnail" src="data:," alt="Video thumbnail"/>
-				<!--Brauche beim <img> src="data:,", damit w3 validiert-->
+	<!-- video is private
+		<div class="video_glow is_video_centered_and_resized">
+			<div class="is_video_responsive_and_more">
+				<div id="skills_video" class="video">
+					<img loading="lazy" id="thumbnail" class="thumbnail" src="data:," alt="Video thumbnail"/>
+					<!--Brauche beim <img> src="data:,", damit w3 validiert-->
+				</div>
 			</div>
 		</div>
-	</div>
+	-->
 
-	<p id="skillset" class="has_borders codearea is_orange">
+	<p id="skillset" class="has_borders codearea is_orange video_glow is_video_centered_and_resized">
 			{"skillset": [<span class="is_white">"HTML5", "CSS3", "Python", "Java", "C++"</span>,
 			<br>"Networking (<span class="is_white">Cisco Certificate-CNE</span>)",
 			<br> "Basics of these: <span class="is_white">Blender, Unity, GLSL, SQL, PHP, C, JavaScript, C#, .Net, AI</span>"]}
@@ -307,6 +309,6 @@
 	</div>
 
 	<script src="./libraries/custom.min.js"></script>
-	<script src="./libraries/video.js"></script>
+	<!-- <script src="./libraries/video.js"></script> -->
 </body>
 </html>
